@@ -1,5 +1,5 @@
 # personal portfolio
 
-! NOT FINISHED !
+ NOT FINISHED  !
 
  using react to create a personal portfolio
