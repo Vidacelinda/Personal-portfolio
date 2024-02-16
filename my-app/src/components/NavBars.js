@@ -1,13 +1,30 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {Navbar,Container} from 'react-bootstrap';
 
 // export const Navbar=()=>{
-//     const [activeLink,setActiveLink]
+//   const[activeLink,setActiveLink]=useState('home');
+//   const[scrolled,seScrolled]=useState(false);
 // }
 
 function BasicExample() {
   const[activeLink,setActiveLink]=useState('home');
   const[scrolled,seScrolled]=useState(false);
+
+  //banner scrolled 
+  useEffect(()=>{
+    const onScroll=()=>{
+      if(window.scrollY>50){ //50 pixle 
+        seyScrolled(true)
+      }else{
+        setScrolled(true)
+      }
+    }
+    window.addEventListener("scroll",onScroll);
+    // remove it becasue when the compnents gets removed from the dom
+    return ()=>window.removeEventListener("scroll",onScroll);
+  },[])
+
+
   return (
     <Navbar expand="lg" >
       <Container>
