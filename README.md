@@ -1,7 +1,8 @@
 # personal portfolio
 
-! NOT FINISHED  !
+### ! NOT FINISHED  !
+### Note: currently under construction estimated completion date 3/19/2024 
+ 
+using react to create a personal portfolio .
 
- using react to create a personal portfolio .
-
-Navagation *
+Navagation - 
